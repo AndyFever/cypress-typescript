@@ -1,0 +1,24 @@
+{
+  "name": "cypress-cucumber-webpack-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^10.12.11"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "author": "Andy Fever",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.0.2",
+    "@faker-js/faker": "^6.0.0",
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "latest",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.1",
+    "webpack": "^4.28.2"
+  }
+}
