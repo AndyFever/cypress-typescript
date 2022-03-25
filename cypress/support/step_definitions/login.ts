@@ -3,7 +3,8 @@ import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import {Accounts} from "../common/Accounts";
 
 Given(/^I have an existing verified account$/, () => {
-    cy.log("Is this working?  It sure is!")
+    cy.log("Is this working?  It sure is!");
+    cy.visit('http://localhost:3001');
     Accounts.printMessageToCy('It\'s working through TS');
 });
 
